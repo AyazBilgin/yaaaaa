@@ -27,11 +27,11 @@ let eklenti = new Discord.MessageEmbed()
 .setThumbnail(message.author.displayAvatarURL({dynamic : true}))
 .setImage('https://cdn.glitch.com/9d614440-7abd-4f7e-962c-3d7d43fd903e%2Fstandard.gif?v=1617453250882')
 .setColor('#f6ff00')
-.setDescription(` Spallers botumuzu eklemek için \`${prefix}botdavet\` yazabilirsiniz.`)  
+.setDescription(` Fregas botumuzu eklemek için \`${prefix}botdavet\` yazabilirsiniz.`)  
 .addField(`<a:kalkan:8 __İstatistiğim__`,` \`${prefix}istatistiğim\`Kendi istatistiğinizi görürsünüz.`,true)
 .addField(` __Sıralama__`,` \`${prefix}top\` Sunucududa istatistiklerde ilk 5i gösterir.`,true)
 .addField(` __Reset__`,` \`${prefix}reset\` Sunucudaki istatistikleri sıfırlar..`,true)
-.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | BRK'yi Sunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
+.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | Fregas Sunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
  message.channel.send(eklenti) 
   };
   exports.conf = {
