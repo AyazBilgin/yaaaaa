@@ -24,15 +24,15 @@ if(message.author.id != "627803211348312065") return message.channel.send(bakim)
 
 }
 let eklenti = new Discord.MessageEmbed()  
-.setAuthor('BRK Yardım Menüsü',message.author.displayAvatarURL({dynamic : true}))
+.setAuthor('Fregas Bot Yardım Menüsü',message.author.displayAvatarURL({dynamic : true}))
 .setThumbnail('')
 .setImage("https://cdn.glitch.com/9d614440-7abd-4f7e-962c-3d7d43fd903e%2Fstandard.gif?v=1617453250882")
 .setColor('#f6ff00')
 .addField( `**╔═══════════◥◣❖◢◤════════════╗**`,
     ` **║ Bilgilendirme.**
 **║ [Botu Davet Et](https://discord.com/api/oauth2/authorize?client_id=877628391031988266&permissions=261993005055&scope=bot)**
-**║ [Destek Sunucusu](https://discord.gg/tahsineren)**
-**║ [Bot Sitesi](https://brkbot.glitch.me/)**
+**║ [Destek Sunucusu](https://discord.gg/f35ruDy8)**
+**║ Bot Sitesi (Yakında)**
 **╚═══════════◥◣❖◢◤════════════╝**
    `)
 .addField(` __Kayıt Komutları__`,` \`${prefix}kayıt\``,true)
