@@ -39,7 +39,7 @@ let eklenti = new Discord.MessageEmbed()
 .addField(` __Reklam Sayacı__`,` \`${prefix}reklam-sayar\` Toplam Reklam Sayınızı Gösterir.`,true)
 .addField(` __Kullanıcı Bilgi__`,` \`${prefix}kullanıcı-bilgi <@üye>\` Kullanıcı'nın Bilgilerini Gösterir.`,true)
 .addField(` __Sunucu Bilgi__`,` \`${prefix}sunucu-bilgi\` Sunucu'nun Bilgilerini Gösterir.`,true)
-.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | BRK'yi Sunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
+.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | Fregas Sunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
  message.channel.send(eklenti) 
   };
   exports.conf = {
