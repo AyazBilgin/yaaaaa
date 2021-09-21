@@ -1,29 +1,34 @@
-const Discord = require('discord.js');
-const { Database } = require('nukleon');
-const db = new Database("plasmic.json")
-const bt = require('best-tools')
-exports.run = async (client, message, args) => {
-    let user;
+const Discord = require("discord.js");
+const db = require('croxydb');
+const ayarlar = require('../ayarlar.json')
 
-    if (message.mentions.users.first()) {
-        user = message.mentions.users.first();
-      } else {
-          user = message.author;
-      }
-  
-      const member = message.guild.member(user);
-      let engin = db.fetch(`kayıtsayıerkek_${message.guild.id}.${user.id}`)
-      let enginar = db.fetch(`kayıtsayıkız_${message.guild.id}.${user.id}`)
-      if(engin == engin) {var erkeksayı = engin}
-      if(engin == undefined) {var erkeksayı = "0"}
-      if(enginar == enginar) {var kızsayı = enginar}
-      if(enginar == undefined) {var kızsayı = "0"}
-    let toplam =  bt.hesapla(erkeksayı + kızsayı)
-      const embed = new Discord.MessageEmbed()
-      .setTitle(user.username + " adlı kişinin istatistiği!")
-      .setDescription(`Erkek kayıt sayısı: ${erkeksayı} \n \n Kız kayıt sayısı: ${kızsayı} \n \n Toplam kayıt sayısı: ${toplam}`)
-      return message.channel.send(embed)
+exports.run = async (client, message, args) => {//splashen
+  let kişi = message.mentions.users.first() || message.member
+  let erkek = db.get(`erkekpuan_${message.author.id}`);
+  let kız = db.get(`kızpuan_${message.author.id}`);
+let toplam = erkek+kız
+var embed = new Discord.MessageEmbed()
+.setThumbnail(message.author.displayAvatarURL({dynamic : true}))
+.setColor('#f6ff00')
+.setDescription(`
+●▬▬▬  **Kayıt İstatistikleri** ▬▬▬●
+
+           > <a:sag:835661239664902164>     • \`Yetkili\` • **${kişi}**
+           > <a:sag:835661239664902164>     • \`Toplam Üye Kayıt Sayısı\` • **${toplam}**
+           > <a:sag:835661239664902164>     • \`Toplam Erkek Kayıt Sayısı\` • **${erkek}**
+           > <a:sag:835661239664902164>    • \`Toplam Kadın Kayıt Sayısı\` • **${kız}**
+              
+●▬▬▬  **Kayıt  İstatistikleri** ▬▬▬●
+
+
+
+
+`)
+.setImage('')
+message.reply(embed)
+
 }
+
 exports.conf = {
   enabled: true,
   guildOnly: false,
@@ -32,7 +37,5 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'kayıt-istatistik',
-  description: "abcssdsaasd"
-
+  name: 'toplam-kayıt'
 };
