@@ -23,15 +23,15 @@ if(message.author.id != "627803211348312065") return message.channel.send(bakim)
 
 }
 let eklenti = new Discord.MessageEmbed()  
-.setAuthor(`BRK Sunucu Kur Komutları`, client.user.avatarURL())
+.setAuthor(`Fregas Sunucu Kur Komutları`, client.user.avatarURL())
 .setThumbnail(message.author.displayAvatarURL({dynamic : true}))
 .setImage('https://cdn.glitch.com/9d614440-7abd-4f7e-962c-3d7d43fd903e%2Fstandard.gif?v=1617453250882')
 .setColor('#f6ff00')
-.setDescription(` **BRK botumuzu eklemek için \`${prefix}botdavet\` yazabilirsiniz.**`)  
+.setDescription(` **Fregas botumuzu eklemek için \`${prefix}botdavet\` yazabilirsiniz.**`)  
 .addField(` __Oyun Teması__`,` \`${prefix}sunucu-kur-oyun\` **Oyun Temalı Sunucu Kurar.**`,true)
 .addField(` __J4J Teması__`,` \`${prefix}sunucu-kur-j4j\` **J4J Temalı Sunucu Kurar.**`,true)
 .addField(` __İnvite = Ödül Teması__`,` \`${prefix}sunucu-kur-invite=ödül\`** Ödül Temalı Sunucu Kurar.**`,true)
-.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | **BRK'yi Sunucunuza Davet Edersiniz**\n \`${prefix}istatistik\` | **Botun İstatistiklerini Gösterir **`)
+.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | **Fregas Sunucunuza Davet Edersiniz**\n \`${prefix}istatistik\` | **Botun İstatistiklerini Gösterir **`)
  message.channel.send(eklenti) 
   };
   exports.conf = {
