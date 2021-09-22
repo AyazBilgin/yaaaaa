@@ -26,7 +26,7 @@ if(message.author.id != "627803211348312065") return message.channel.send(bakim)
 let eklenti = new Discord.MessageEmbed()  
 .setAuthor('Fregas Bot Yardım Menüsü',message.author.displayAvatarURL({dynamic : true}))
 .setThumbnail('')
-.setImage("")
+.setImage("https://api.creavite.co/out/a9530977-8785-424a-9698-c1a6e14c7604_standard.gif")
 .setColor('#f6ff00')
 .addField( `**╔═══════════◥◣❖◢◤════════════╗**`,
     ` **║ Bilgilendirme.**
