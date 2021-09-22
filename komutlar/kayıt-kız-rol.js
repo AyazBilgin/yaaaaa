@@ -18,7 +18,7 @@ exports.run = async(client, message, args) => {
   .addField('İşte Destek Sunucum',"[Destek Sunucusu](https://discord.gg/Dj5CF27Pfy)")
   .setFooter('Üzgünüm...')
   .setImage('https://lh3.googleusercontent.com/proxy/gAN4I19oqqabXd_VIiwg5or-ITh4XxJTRNJA1ot0EIHPiBpxC74Atj4wNIcFes1N3VcE8WnOk6fIN29BChqNbj4lj9dIF2jiI7MBV6U8v842LA')
-if(message.author.id != "627803211348312065") return message.channel.send(bakim)
+if(message.author.id != "") return message.channel.send(bakim)
 
 }
 
@@ -31,7 +31,7 @@ const sıfırlandı = new discord.MessageEmbed()
 .setColor("#f6ff00")
 .setDescription(` Sunucu için ayarladığınız kız rolü başarıyla sıfırlandı!`)
 .setThumbnail(client.user.avatarURL)
-.setFooter(`BRK`)
+.setFooter(`Fregasa`)
 message.channel.send(sıfırlandı)
 db.delete(`kızrol_${message.guild.id}`)
 return;
@@ -45,7 +45,7 @@ if (!rol) {
 .setColor("#f6ff00")
 .setDescription(` Ayarlayacağınız kız rolünü belirtiniz!`)
 .setThumbnail(client.user.avatarURL)
-.setFooter(`BRK`)
+.setFooter(`Fregas`)
 message.channel.send(ayarlanmadı)
 }
 db.set(`kızrol_${message.guild.id}`, rol.id)
@@ -55,7 +55,7 @@ const ayarlandı = new discord.MessageEmbed()
 .setColor("#f6ff00")
 .setDescription(` Kız rolü başarıyla ${rol} olarak ayarlandı!`)
 .setThumbnail(client.user.avatarURL)
-.setFooter(`BRK`)
+.setFooter(`Fregas`)
 message.channel.send(ayarlandı)
   
 }
@@ -68,5 +68,5 @@ exports.conf = {
 exports.help = {
   name: 'kız-rol',
   description: 'kız rolünü ayarlar',
-  usage: '!kız-rol @rol'
+  usage: 'f!kız-rol @rol'
 }
