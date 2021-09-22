@@ -31,7 +31,7 @@ const embed = new Discord.MessageEmbed()
 .setImage(user.displayAvatarURL({dynamic:true})) 
 .setTimestamp()
 .setColor('#f6ff00')
-.setFooter(`BRK`)
+.setFooter(`Fregas`)
 message.channel.send(embed)
  }
 }
