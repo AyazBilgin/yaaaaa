@@ -13,10 +13,10 @@ var embed = new Discord.MessageEmbed()
 .setDescription(`
 ●▬▬▬  **Kayıt İstatistikleri** ▬▬▬●
 
-           > <a:sag:835661239664902164>     • \`Yetkili\` • **${kişi}**
-           > <a:sag:835661239664902164>     • \`Toplam Üye Kayıt Sayısı\` • **${toplam}**
-           > <a:sag:835661239664902164>     • \`Toplam Erkek Kayıt Sayısı\` • **${erkek}**
-           > <a:sag:835661239664902164>    • \`Toplam Kadın Kayıt Sayısı\` • **${kız}**
+     • \`Yetkili\` • **${kişi}**
+    • \`Toplam Üye Kayıt Sayısı\` • **${toplam}**
+     • \`Toplam Erkek Kayıt Sayısı\` • **${erkek}**
+     • \`Toplam Kadın Kayıt Sayısı\` • **${kız}**
               
 ●▬▬▬  **Kayıt  İstatistikleri** ▬▬▬●
 
