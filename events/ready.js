@@ -8,8 +8,16 @@ var prefix = ayarlar.prefix;
 module.exports = client => {
 var oyun = [
         `f! prefix`,
-        `Bakımda`
-    ];
+" Kullanıcılar",
+      client.guilds.cache
+        .reduce((a, b) => a + b.memberCount, 0)
+        .toLocaleString(),
+      true
+    .addField(
+      "Sunucular",
+      client.guilds.cache.size.toLocaleString(),
+      true
+    
 
     setInterval(function() {
 
