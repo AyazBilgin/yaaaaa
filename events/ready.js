@@ -7,8 +7,8 @@ var prefix = ayarlar.prefix;
 
 module.exports = client => {
 var oyun = [
- 'Fregas Bakım!!',
-
+ 'Toplam Kullanıcılar',
+ client.guilds.cache .reduce ((a, b) => a + b.memberCount, 0) .toLocaleString(), true
     ];
 
     setInterval(function() {
