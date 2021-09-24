@@ -8,7 +8,7 @@ var prefix = ayarlar.prefix;
 module.exports = client => {
 var oyun = [
         `f! prefix`,
-        `Yeni Sistemler`
+        `Bakımda`
     ];
 
     setInterval(function() {
