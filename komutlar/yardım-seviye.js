@@ -23,7 +23,7 @@ if(message.author.id != "853209984510984205") return message.channel.send(bakim)
 
 }
 let eklenti = new Discord.MessageEmbed()  
-.setAuthor(`BRK Seviye Komutları`, client.user.avatarURL())
+.setAuthor(`Frex Seviye Komutları`, client.user.avatarURL())
 .setThumbnail(message.author.displayAvatarURL({dynamic : true}))
 .setImage('https://api.creavite.co/out/be509ef5-c75d-42e2-97b1-0dcf2893a247_standard.gif')
 .setColor('#f6ff00')
