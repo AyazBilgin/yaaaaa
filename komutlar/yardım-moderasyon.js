@@ -37,7 +37,7 @@ let eklenti = new Discord.MessageEmbed()
 .addField(` __Yavaş Mod__`,` \`${prefix}yavaş-mod \` Sohbete Süre Ayarlar.`,true)
 .addField(` __Mod Log__`,` \`${prefix}modlog \` Modlogu ayarlar..`,true)
 .addField(` __Moderasyon2__`,` \`${prefix}moderasyon2 \` | Moderasyon Menüsünün Devamı.`,true)
-.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | BRK'yi Sunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
+.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | Fregas Sunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
  message.channel.send(eklenti) 
   };
   exports.conf = {
