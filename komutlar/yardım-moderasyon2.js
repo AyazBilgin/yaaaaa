@@ -23,11 +23,11 @@ if(message.author.id != "853209984510984205") return message.channel.send(bakim)
 
 }
 let eklenti = new Discord.MessageEmbed()  
-.setAuthor(`Fregas Moderasyon Komutları`, client.user.avatarURL())
+.setAuthor(`Bilgin'S Moderasyon Komutları`, client.user.avatarURL())
 .setThumbnail(message.author.displayAvatarURL({dynamic : true}))
 .setImage('https://api.creavite.co/out/be509ef5-c75d-42e2-97b1-0dcf2893a247_standard.gif')
 .setColor('#f6ff00')
-.setDescription(` Fregas botumuzu eklemek için \`${prefix}botdavet\` yazabilirsiniz.`)  
+.setDescription(` Bilgin'S botumuzu eklemek için \`${prefix}botdavet\` yazabilirsiniz.`)  
 .addField(` __Ban Log__`,` \`${prefix}ban-log\` Ban Log Kanalı Ayarlarsınız.`,true)
 .addField(` __Ban Yetkili Rol__`,` \`${prefix}ban-yetkili-rol\` Sadece Kimler Banlayabilir?`,true)
 .addField(` __Ban__`,` \`${prefix}ban <@üye> <sebep>\` Kişiyi Banlarsınız.`,true)
@@ -37,7 +37,7 @@ let eklenti = new Discord.MessageEmbed()
 .addField(` __Kick Yetkili Rol__`,` \`${prefix}kick-yetkili-rol\` Sadece Kimler Kick Atabilir?`,true)
 .addField(` __Kick__`,` \`${prefix}kick <@üye> <sebep> \` Kişiyi Sunucudan Kicklersiniz.`,true)
 .addField(` __Moderasyon3__`,` \`${prefix}moderasyon3 \` | Moderasyon Menüsünün Devamı.`,true)
-.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | Fregas Sunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
+.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | Bilgin'S Sunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
  message.channel.send(eklenti) 
   };
   exports.conf = {

@@ -23,11 +23,11 @@ if(message.author.id != "853209984510984205") return message.channel.send(bakim)
 
 }
 let eklenti = new Discord.MessageEmbed()  
-.setAuthor(`Fregas Profil Komutları`, client.user.avatarURL())
+.setAuthor(`Bilgin'S Profil Komutları`, client.user.avatarURL())
 .setThumbnail(message.author.displayAvatarURL({dynamic : true}))
 .setImage('')
 .setColor('#f6ff00')
-.setDescription(` Fregas botumuzu eklemek için \`${prefix}botdavet\` yazabilirsiniz.`)  
+.setDescription(` Bilgin'S botumuzu eklemek için \`${prefix}botdavet\` yazabilirsiniz.`)  
 .addField(` __Bayrak Ayarla__`,` \`${prefix}bayrakayarla\` İstediğiniz Bayrağı Ayarlarsınız.`,true)
 .addField(` __Cinsiyet Ayarla__`,` \`${prefix}cinsiyetayarla\` Cinsiyetinizi Ayarlarsınız.`,true)
 .addField(` __İsim Ayarla__`,` \`${prefix}isimayarla\` İsminizi Ayarlarsınız.`,true)
@@ -36,7 +36,7 @@ let eklenti = new Discord.MessageEmbed()
 .addField(` __Favori Oyun Ayarla__`,` \`${prefix}favorioyun\` Favori Oyununuzu Ayarlarsınız.`,true)
 .addField(` __Favori Şarkı Ayarla__`,` \`${prefix}favorişarkı\` Favori Şarkınızı Ayarlarsınız.`,true)
 .addField(` __Profilim__`,` \`${prefix}profilim\` Profilinize Bakarsınız.`,true)
-.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | Fregas Sunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
+.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | Bilgin'S Sunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
  message.channel.send(eklenti) 
   };
   exports.conf = {
