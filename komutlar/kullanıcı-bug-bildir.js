@@ -6,13 +6,13 @@ let bug = args.join(" ").slice(0);
   const sebep2 = new Discord.MessageEmbed()
   .setDescription(` \`${message.author.username}\` **Bug Söyler misin ?**`)
   .setColor("#f6ff00")
-  .setFooter(`Fregas Bug Sistemi.`)
+  .setFooter(`Bilgin S Bug Sistemi.`)
   if(!bug) return message.channel.send(sebep2);
 let user = message.author.tag;
 let guild = message.guild.name;
 let guildid = message.guild.id;
 let kanal = message.channel.name;
-let gonderilecek_kisi = bot.users.cache.get("853209984510984205")//rapor edilecek kişinin idsi
+let gonderilecek_kisi = bot.users.cache.get("774407812620222516")//rapor edilecek kişinin idsi
 let embed = new Discord.MessageEmbed()
 .setTitle("Bug Rapor")
 .addField("Bug", bug)

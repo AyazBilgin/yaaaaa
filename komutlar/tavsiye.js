@@ -5,14 +5,14 @@ let tavsiye = args.join(" ").slice(0);
   const sebep2 = new Discord.MessageEmbed()
   .setDescription(` \`${message.author.username}\` **Tavsiyenizi Yazar mısınız ?**`)
   .setColor("#f6ff00")
-  .setFooter(`Fregas Bot Tavsiye Sistemi`)
+  .setFooter(`Bilgin S Bot Tavsiye Sistemi`)
   if(!tavsiye) return message.channel.send(sebep2);
 let user = message.author.tag;
 let userid = message.author.id;
 let guild = message.guild.name;
 let guildid = message.guild.id;
 let kanal = message.channel.name;
-let gonderilecek_kisi = bot.users.cache.get("853209984510984205")//rapor edilecek kişinin idsi
+let gonderilecek_kisi = bot.users.cache.get("774407812620222516")//rapor edilecek kişinin idsi
 let embed = new Discord.MessageEmbed()
 .setTitle("Tavsiye Bildiri")
 .setThumbnail(bot.user.avatarURL())

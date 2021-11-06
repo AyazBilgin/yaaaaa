@@ -29,7 +29,7 @@ if(message.author.id != "627803211348312065") return message.channel.send(bakim)
     .setColor('#f6ff00')
     .setDescription('**:warning: Bunu yapabilmek için gerekli yetkiye sahip değilsiniz! :warning:**')
    .setTimestamp() 
-    .setFooter(`BRK Ban Sistemi`)
+    .setFooter(`Bilgin SBan Sistemi`)
    return message.channel.send(prmlv)
   } 
   if (!message.guild) {
@@ -49,7 +49,7 @@ if(message.author.id != "627803211348312065") return message.channel.send(bakim)
     .setColor('#f6ff00')
     .setDescription(`**Banı kaldırılacak kişinin ID numarasını yazmalısın!**\n => Doğru Kullanım: **${prefix}unban İD sebep**`)
    .setTimestamp() 
-    .setFooter(`BRK Ban Sistemi`)
+    .setFooter(`Bilgin SBan Sistemi`)
    return message.channel.send(bid).catch(console.error);
   } 
   if (reason.length < 1) {
@@ -69,7 +69,7 @@ if(message.author.id != "627803211348312065") return message.channel.send(bakim)
     .addField('Yasağı Kaldırılan Kullanıcı:', `<@!${user}>`,true)
     .addField('Yasağı Kaldıran Yetkili:', `<@!${message.author.id}>`,true)
     .addField('Yasağı Kaldırma Sebebi:', reason,false)
-  .setFooter(`BRK Ban Sistemi`);
+  .setFooter(`Bilgin SBan Sistemi`);
     
    message.channel.send(embed)
 };

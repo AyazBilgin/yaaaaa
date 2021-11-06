@@ -52,7 +52,7 @@ if(!args[2]) reason = 'Bir açıklama yok.';
 
 message.guild.channels.cache.get(logChannel).send(new Discord.MessageEmbed()
 .setColor("#f6ff00")
-.setTitle('BRK - Sesli Mute Sistem')
+.setTitle('Bilgin S- Sesli Mute Sistem')
 .setDescription(`
  **Kullanan Yetkili:** ${message.author.tag}
  **Kullanılan kişi:** ${member.user.tag}
@@ -64,7 +64,7 @@ member.voice.setMute(true);
 setTimeout(() => {
 
 message.guild.channels.cache.get(logChannel).send(new Discord.MessageEmbed()
-.setTitle(' BRK - Sesli  Mute Sistem').setColor("#f6ff00")
+.setTitle(' Bilgin S- Sesli  Mute Sistem').setColor("#f6ff00")
 .setDescription(`
  ${member.user} **kullanıcısının sesli mute süresi bitti!**
 `))

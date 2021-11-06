@@ -5,7 +5,7 @@ exports.run = async(client, message, args) => {
     let karaliste = db.fetch(`ckaraliste.${message.author.id}`)
  const westraben = new discord.MessageEmbed()
  .setColor("#f6ff00")
- .setDescription(` **${karaliste}** sebebiyle karalisteye alınmışsın!\nBeyaz listeye alınmak istiyorsan [BURAYA](https://discord.gg/Dj5CF27Pfy) gelebilirsin!`)
+ .setDescription(` **${karaliste}** sebebiyle karalisteye alınmışsın!\nBeyaz listeye alınmak istiyorsan [BURAYA](https://discord.gg/mux4kv7tqK) gelebilirsin!`)
   if(karaliste) 
     return message.channel.send(westraben)
   
@@ -15,7 +15,7 @@ exports.run = async(client, message, args) => {
 .setThumbnail(message.author.displayAvatarURL({dynamic : true}))
   .setTitle('Üzgünüm Bot Bakımda')
   .addField('Bot Şuan Bakımdadır Lütfen Bekleyin.','Bot Ne Durumda Yada Botla İlgili Güncelleme Ve Duyurular İçin Destek Sunucumuza Gelmeyi Unutmayınız.')
-  .addField('İşte Destek Sunucum',"[Destek Sunucusu](https://discord.gg/Dj5CF27Pfy)")
+  .addField('İşte Destek Sunucum',"[Destek Sunucusu](https://discord.gg/mux4kv7tqK)")
   .setFooter('Üzgünüm...')
   .setImage('https://lh3.googleusercontent.com/proxy/gAN4I19oqqabXd_VIiwg5or-ITh4XxJTRNJA1ot0EIHPiBpxC74Atj4wNIcFes1N3VcE8WnOk6fIN29BChqNbj4lj9dIF2jiI7MBV6U8v842LA')
 if(message.author.id != "") return message.channel.send(bakim)
@@ -31,7 +31,7 @@ const sıfırlandı = new discord.MessageEmbed()
 .setColor("#f6ff00")
 .setDescription(` Sunucu için ayarladığınız kayıtçı rol başarıyla sıfırlandı!`)
 .setThumbnail(client.user.avatarURL)
-.setFooter(`Fregas`)
+.setFooter(`Bilgin S`)
 message.channel.send(sıfırlandı)
 db.delete(`kayıtçırol_${message.guild.id}`)
 return;
@@ -45,7 +45,7 @@ if (!rol) {
 .setColor("#f6ff00")
 .setDescription(` Ayarlayacağınız kayıtçı rolü belirtiniz!`)
 .setThumbnail(client.user.avatarUR())
-.setFooter(`Fregas`)
+.setFooter(`Bilgin S`)
 message.channel.send(ayarlanmadı)
 }
 db.set(`kayıtçırol_${message.guild.id}`, rol.id)
@@ -55,7 +55,7 @@ const ayarlandı = new discord.MessageEmbed()
 .setColor("#f6ff00")
 .setDescription(` Kayıt edecek rol başarıyla ${rol} olarak ayarlandı!`)
 .setThumbnail(client.user.avatarURL)
-.setFooter(`Fregas`)
+.setFooter(`Bilgin S`)
 message.channel.send(ayarlandı)
   
 }
@@ -68,5 +68,5 @@ exports.conf = {
 exports.help = {
   name: 'kayıtçı-rol',
   description: 'kız rolünü ayarlar',
-  usage: 'f!kız-rol @rol'
+  usage: 'b!kız-rol @rol'
 }

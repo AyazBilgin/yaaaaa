@@ -7,7 +7,7 @@ exports.run = async (client, message, args) => {
     let karaliste = db.fetch(`ckaraliste.${message.author.id}`)
  const westraben = new Discord.MessageEmbed()
  .setColor("#f6ff00")
- .setDescription(` **${karaliste}** sebebiyle karalisteye alınmışsın!\nBeyaz listeye alınmak istiyorsan [BURAYA](https://discord.gg/VWJmAZFGHe) gelebilirsin!`)
+ .setDescription(` **${karaliste}** sebebiyle karalisteye alınmışsın!\nBeyaz listeye alınmak istiyorsan [BURAYA](https://discord.gg/mux4kv7tqK) gelebilirsin!`)
   if(karaliste) 
     return message.channel.send(westraben)
   
@@ -17,22 +17,22 @@ exports.run = async (client, message, args) => {
 .setThumbnail(message.author.displayAvatarURL({dynamic : true}))
   .setTitle('Üzgünüm Bot Bakımda')
   .addField('Bot Şuan Bakımdadır Lütfen Bekleyin.','Bot Ne Durumda Yada Botla İlgili Güncelleme Ve Duyurular İçin Destek Sunucumuza Gelmeyi Unutmayınız.')
-  .addField('İşte Destek Sunucum',"[Destek Sunucusu](https://discord.gg/VWJmAZFGHe)")
+  .addField('İşte Destek Sunucum',"[Destek Sunucusu](https://discord.gg/mux4kv7tqK)")
   .setFooter('Üzgünüm...')
   .setImage('https://lh3.googleusercontent.com/proxy/gAN4I19oqqabXd_VIiwg5or-ITh4XxJTRNJA1ot0EIHPiBpxC74Atj4wNIcFes1N3VcE8WnOk6fIN29BChqNbj4lj9dIF2jiI7MBV6U8v842LA')
-if(message.author.id != "853209984510984205") return message.channel.send(bakim)
+if(message.author.id != "") return message.channel.send(bakim)
 
 }
 let eklenti = new Discord.MessageEmbed()  
 .setAuthor('Bilgin S Bot Yardım Menüsü',message.author.displayAvatarURL({dynamic : true}))
 .setThumbnail('')
-.setImage("https://api.creavite.co/out/be509ef5-c75d-42e2-97b1-0dcf2893a247_standard.gif")
+.setImage("https://cdn.discordapp.com/attachments/810283528851292262/893456605960605696/standard_1.gif")
 .setColor('#f6ff00')
 .addField( `**╔═══════════◥◣❖◢◤════════════╗**`,
     ` **║ Bilgilendirme.**
-**║ [Botu Davet Et](https://discord.com/oauth2/authorize?client_id=889921622662852628&permissions=8&scope=bot**
-**║ [Destek](https://discord.gg/VWJmAZFGHe)**
-**║ Bot Sitesi (Yakında)**
+**║ [Botu Davet Et](https://discord.com/oauth2/authorize?client_id=882636769147904030&scope=bot&permissions=8)**
+**║ [Destek](https://discord.gg/mux4kv7tqK)**
+**║ [Bot Sitesi](https://bilgin-s.glitch.me/index.html)**
 **╚═══════════◥◣❖◢◤════════════╝**
    `)
 .addField(` __Kayıt Komutları__`,` \`${prefix}kayıt\``,true)
@@ -48,6 +48,7 @@ let eklenti = new Discord.MessageEmbed()
 .addField(` __Kullanıcı Komutları__`,` \`${prefix}kullanıcı\` `,true)
 .addField(` __Nsfw Komutları__`,` \`${prefix}nsfw(yakında),\` `,true)
 .addField(` __Hazır Sunucu Komutları__`,` \`${prefix}sunucukur\` `,true)
+
 
 .addField(`╔═══════════◥◣❖◢◤════════════╗`,
 `**║  \`${prefix}botdavet\` __Botu Davet Edebilirsiniz!__**

@@ -23,11 +23,11 @@ if(message.author.id != "627803211348312065") return message.channel.send(bakim)
 
 }
 let eklenti = new Discord.MessageEmbed()  
-.setAuthor(`BRK Gif Komutları`, client.user.avatarURL())
+.setAuthor(`Bilgin SGif Komutları`, client.user.avatarURL())
 .setThumbnail(message.author.displayAvatarURL({dynamic : true}))
-.setImage('https://cdn.glitch.com/9d614440-7abd-4f7e-962c-3d7d43fd903e%2Fstandard.gif?v=1617453250882')
+.setImage('https://cdn.discordapp.com/attachments/810283528851292262/893456605960605696/standard_1.gif')
 .setColor('#f6ff00')
-.setDescription(` BRK botumuzu eklemek için \`${prefix}botdavet\` yazabilirsiniz.`)  
+.setDescription(` Bilgin Sbotumuzu eklemek için \`${prefix}botdavet\` yazabilirsiniz.`)  
 .addField(`<a:kalkan:8 __Hayvan Gif__`,` \`${prefix}animal-gif\` Hayvan Gif'i Atar.`,true)
 .addField(` __Anime Gif__`,` \`${prefix}anime-gif\` Anime Gif'i Atar.`,true)
 .addField(` __Bebek Gif__`,` \`${prefix}baby-gif\` Bebek Gif'i Atar.`,true)
@@ -35,7 +35,7 @@ let eklenti = new Discord.MessageEmbed()
 .addField(` __Erkek Gif__`,` \`${prefix}man-gif\` Erkek Gif'i Atar.`,true)
 .addField(` __Kadın Gif__`,` \`${prefix}woman-gif\` Kadın Gif'i Atar.`,true)
 .addField(` __Kahraman Gif__`,` \`${prefix}marvel-gif\` Kahraman Gif'i Atar.`,true)
-.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | BRK'yi Sunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
+.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | Bilgin S'yi Sunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
  message.channel.send(eklenti) 
   };
   exports.conf = {

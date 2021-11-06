@@ -16,21 +16,21 @@ let prefix = ayarlar.prefix
 .setThumbnail(message.author.displayAvatarURL({dynamic : true}))
   .setTitle('Üzgünüm Bot Bakımda')
   .addField('Bot Şuan Bakımdadır Lütfen Bekleyin.','Bot Ne Durumda Yada Botla İlgili Güncelleme Ve Duyurular İçin Destek Sunucumuza Gelmeyi Unutmayınız.')
-  .addField('İşte Destek Sunucum',"[Destek Sunucusu](https://discord.gg/kqaBAxkkuX)")
+  .addField('İşte Destek Sunucum',"[Destek Sunucusu](https://discord.gg/mux4kv7tqK)")
   .setFooter('Üzgünüm...')
   .setImage('https://lh3.googleusercontent.com/proxy/gAN4I19oqqabXd_VIiwg5or-ITh4XxJTRNJA1ot0EIHPiBpxC74Atj4wNIcFes1N3VcE8WnOk6fIN29BChqNbj4lj9dIF2jiI7MBV6U8v842LA')
 if(message.author.id != "627803211348312065") return message.channel.send(bakim)
 
 }
 let eklenti = new Discord.MessageEmbed()  
-.setAuthor(`BRK Davet Komutları`, client.user.avatarURL())
+.setAuthor(`Bilgin SDavet Komutları`, client.user.avatarURL())
 .setThumbnail(message.author.displayAvatarURL({dynamic : true}))
-.setImage('https://cdn.glitch.com/9d614440-7abd-4f7e-962c-3d7d43fd903e%2Fstandard.gif?v=1617453250882')
+.setImage('https://cdn.discordapp.com/attachments/810283528851292262/893456605960605696/standard_1.gif')
 .setColor('#f6ff00')
-.setDescription(` BRK botumuzu eklemek için \`${prefix}botdavet\` yazabilirsiniz.`)  
+.setDescription(` Bilgin S botumuzu eklemek için \`${prefix}botdavet\` yazabilirsiniz.`)  
 .addField(`<a:kalkan:8 __Davet Log__`,` \`${prefix}davet-log ayarla <#kanal>\` Davet Log Kanalını Ayarlarsınız.`,true)
 .addField(` __Davetlerim__`,` \`${prefix}davetlerim\` Davet Sayınızı Öğrenirsiniz.`,true)
-.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | BRK'yi Sunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
+.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | Bilgin S'yi Sunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
  message.channel.send(eklenti) 
   };
   exports.conf = {

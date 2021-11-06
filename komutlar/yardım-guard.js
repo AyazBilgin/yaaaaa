@@ -23,11 +23,11 @@ if(message.author.id != "627803211348312065") return message.channel.send(bakim)
 
 }
 let eklenti = new Discord.MessageEmbed()  
-.setAuthor(`BRK Guard Komutları`, client.user.avatarURL())
+.setAuthor(`Bilgin SGuard Komutları`, client.user.avatarURL())
 .setThumbnail(message.author.displayAvatarURL({dynamic : true}))
-.setImage('https://cdn.glitch.com/9d614440-7abd-4f7e-962c-3d7d43fd903e%2Fstandard.gif?v=1617453250882')
+.setImage('https://cdn.discordapp.com/attachments/810283528851292262/893456605960605696/standard_1.gif')
 .setColor('#f6ff00')
-.setDescription(` BRK botumuzu eklemek için \`${prefix}botdavet\` yazabilirsiniz.`)  
+.setDescription(` Bilgin Sbotumuzu eklemek için \`${prefix}botdavet\` yazabilirsiniz.`)  
 .addField(` __Ban Koruması__`,` \`${prefix}ban-koruma\` Ban Korumasını Aktif Eder.`,true)
 .addField(`<a:kalkan:881484871657193493> __Spam Koruması__`,` \`${prefix}spam\` Spam Korumasını Aktif Eder.`,true)
 .addField(` __Self Koruma__`,` \`${prefix}self-koruma\` Self Botları Susturur.`,true)
@@ -35,7 +35,7 @@ let eklenti = new Discord.MessageEmbed()
 .addField(` __Reklam Koruması__`,` \`${prefix}reklamengel\` Reklam Korumasını Aktif Eder.`,true)
 .addField(` __Reklam-Log Koruması__`,` \`${prefix}reklamlog\` Reklam Yapınca Mesajı Siler Kanal'a Atar.`,true)
 .addField(` __Küfür Koruması__`,` \`${prefix}küfür-engelle\` Küfür Korumasını Aktif Eder.`,true)
-.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | BRK'yi Sunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
+.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | Bilgin S'yi Sunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
  message.channel.send(eklenti) 
   };
   exports.conf = {

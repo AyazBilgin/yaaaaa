@@ -12,11 +12,11 @@ let prefix = ayarlar.prefix
   .addField('İşte Destek Sunucum',"[Destek Sunucusu](https://discord.gg/kqaBAxkkuX)")
   .setFooter('Üzgünüm...')
   .setImage('https://lh3.googleusercontent.com/proxy/gAN4I19oqqabXd_VIiwg5or-ITh4XxJTRNJA1ot0EIHPiBpxC74Atj4wNIcFes1N3VcE8WnOk6fIN29BChqNbj4lj9dIF2jiI7MBV6U8v842LA')
-if(message.author.id != "627803211348312065") return message.channel.send(bakim)
+if(message.author.id != "774407812620222516") return message.channel.send(bakim)
 
 }
   
-  if(message.author.id != "627803211348312065") return //Bot sahip id
+  if(message.author.id != "774407812620222516") return //Bot sahip id
   
   if(!args[0]) return message.channel.send(`**Bakım modunu açmak için ${prefix}bakım aç**`)
   

@@ -5,7 +5,7 @@ exports.run = async(client, message, args) => {
    let karaliste = db.fetch(`ckaraliste.${message.author.id}`)
  const westraben = new discord.MessageEmbed()
  .setColor("#f6ff00")
- .setDescription(`**${karaliste}** sebebiyle karalisteye alınmışsın!\nBeyaz listeye alınmak istiyorsan [BURAYA](https://discord.gg/Dj5CF27Pfy) gelebilirsin!`)
+ .setDescription(`**${karaliste}** sebebiyle karalisteye alınmışsın!\nBeyaz listeye alınmak istiyorsan [BURAYA](https://discord.gg/mux4kv7tqK) gelebilirsin!`)
   if(karaliste) 
     return message.channel.send(westraben)
     if(db.fetch(`bakim`)) {
@@ -14,7 +14,7 @@ exports.run = async(client, message, args) => {
 .setThumbnail(message.author.displayAvatarURL({dynamic : true}))
   .setTitle('Üzgünüm Bot Bakımda')
   .addField('Bot Şuan Bakımdadır Lütfen Bekleyin.','Bot Ne Durumda Yada Botla İlgili Güncelleme Ve Duyurular İçin Destek Sunucumuza Gelmeyi Unutmayınız.')
-  .addField('İşte Destek Sunucum',"[Destek Sunucusu](https://discord.gg/Dj5CF27Pfy)")
+  .addField('İşte Destek Sunucum',"[Destek Sunucusu](https://discord.gg/mux4kv7tqK)")
   .setFooter('Üzgünüm...')
   .setImage('https://lh3.googleusercontent.com/proxy/gAN4I19oqqabXd_VIiwg5or-ITh4XxJTRNJA1ot0EIHPiBpxC74Atj4wNIcFes1N3VcE8WnOk6fIN29BChqNbj4lj9dIF2jiI7MBV6U8v842LA')
 if(message.author.id != "627803211348312065") return message.channel.send(bakim)
@@ -71,7 +71,7 @@ const başarılı = new discord.MessageEmbed()
 .setDescription(` Erkek olarak kayıt edilen kullanıcı: ${member} \n Erkek olarak kayıt eden yetkili: <@!${message.author.id}>`)
 .addField(`Kullanıcının ismi:`, `${isim}`, true)
 .addField(`Kullanıcının yaşı:`, `${yaş}`, true)
-.setFooter(`BRK Kayıt Sistemi`)
+.setFooter(`Bilgin SKayıt Sistemi`)
 message.channel.send(başarılı)
 }
 exports.conf = {
@@ -83,5 +83,5 @@ exports.conf = {
 exports.help = {
   name: 'erkek',
   description: 'erkek olarak kayıt eder',
-  usage: 'f!erkek @kullanıcı isim yaş'
+  usage: 'b!erkek @kullanıcı isim yaş'
 }

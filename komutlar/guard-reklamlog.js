@@ -52,5 +52,5 @@ exports.conf = {
 exports.help = {
   name: 'reklamlog',
   description: 'Guard',
-  usage: 'BRK 2 '
+  usage: 'Bilgin S2 '
 }

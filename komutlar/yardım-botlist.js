@@ -23,17 +23,17 @@ if(message.author.id != "627803211348312065") return message.channel.send(bakim)
 
 }
 let eklenti = new Discord.MessageEmbed()  
-.setAuthor(` BRK BotList Komutları`, client.user.avatarURL())
+.setAuthor(` Bilgin SBotList Komutları`, client.user.avatarURL())
 .setThumbnail(message.author.displayAvatarURL({dynamic : true}))
-.setImage('https://cdn.glitch.com/9d614440-7abd-4f7e-962c-3d7d43fd903e%2Fstandard.gif?v=1617453250882')
+.setImage('https://cdn.discordapp.com/attachments/810283528851292262/893456605960605696/standard_1.gif')
 .setColor('#f6ff00')
-.setDescription(` BRK botumuzu eklemek için \`${prefix}botdavet\` yazabilirsiniz.`)  
+.setDescription(` Bilgin Sbotumuzu eklemek için \`${prefix}botdavet\` yazabilirsiniz.`)  
 .addField(` __Başvurular__`,` \`${prefix}başvuru-gidecek-kanal-ayarla\` Başvuruların Gideceği Kanal`,true)
 .addField(` __Başvuru Log__`,` \`${prefix}başvuru-log-ayarla\` Bot Onaylandı / Reddedildi Log Kanalı.`,true)
 .addField(` __Yetkili Rol__`,` \`${prefix}botlist-yetkili-rol-ayarla\` Botları Onaylayacak Yetkili Rol.`,true)
 .addField(` __Bot Reddet__`,` \`${prefix}botreddet <BotID> <SahipID> <Sebep>\` Botu Reddedersiniz.`,true)
 .addField(` __Bot Onayla__`,` \`${prefix}botonayla <BotID> <SahipID>\` Botu Onaylarsınız.`,true)
-.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | BRK Sunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
+.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | Bilgin SSunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
  message.channel.send(eklenti) 
   };
   exports.conf = {

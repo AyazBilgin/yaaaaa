@@ -51,7 +51,7 @@ client.on("ready", () => {
   console.log(`${client.user.tag}! Aktif!`);
 });
 //BOT ÇALIŞTIRICI______________________________________________________________
-client.login(process.env.token)
+client.login(ayarlar.token);
 
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -570,15 +570,16 @@ client.on("message", msg => {
 	const westrabumbe = new Discord.MessageEmbed()
     .setThumbnail(msg.author.displayAvatarURL({dynamic : true}))
     .setColor('#f6ff00')
-    .setTitle("▬▬▬▬[<a:sasa:778787940741677088> Yardım Mesajım <a:kral:778787824018653205>]▬▬▬▬\n ")
-    .addField("\n**Galiba Benden Yardım İstiyorsun ? O zaman Sana Yardım Edeyim.**\n","**\n`s*yardım` Yazarak Benim `Tüm Komutlarımı Görebilirsin` ve Aşşağıdaki `Destek Sunucusuna Gelerek Botun Sahibinden Yardım Alabilirsin.`**")
-    .addField("**➥ Link**", "[<a:kral:778787824018653205> Destek Sunucu](https://discord.gg/esXbPnr)")
-    .setImage("https://cdn.discordapp.com/attachments/767544528537649193/782343766446964746/standard_2.gif")
+    .setTitle("▬▬▬▬[ Yardım Mesajım ]▬▬▬▬\n ")
+    .addField("\n**Galiba Benden Yardım İstiyorsun ? O zaman Sana Yardım Edeyim.**\n","**\n`b!yardım` Yazarak Benim `Tüm Komutlarımı Görebilirsin` ve Aşşağıdaki `Destek Sunucusuna Gelerek Botun Sahibinden Yardım Alabilirsin.`**")
+    .addField("**➥ Link**", "[Destek Sunucu](https://discord.gg/mux4kv7tqK)")
+    .setImage("https://cdn.discordapp.com/attachments/810283528851292262/893456605960605696/standard_1.gif")
     .setFooter(`${msg.author.username} Yardım Edebildiysem Çok Mutluyum.`, msg.author.avatarURL())
   if (msg.content.includes(`<@${client.user.id}>`) || msg.content.includes(`<@!${client.user.id}>`)) {
     msg.channel.send(westrabumbe);
   }
 });
+
 
 // İnvite Sistemi Beta //
 const invites = {};
@@ -1518,4 +1519,3 @@ client.on("roleCreate", async role => {
   role.delete()
 }
 })
-

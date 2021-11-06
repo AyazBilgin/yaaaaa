@@ -26,7 +26,7 @@ if(message.author.id != "627803211348312065") return message.channel.send(bakim)
 const sistem = await db.fetch(`spam.${message.guild.id}`);
 if(sistem) return message.channel.send(nn.setDescription(`Spam koruma zaten aktif.`)).then(a => a.delete({timeout: 10000}));
 
-db.set(`spam.${message.guild.id}`, 'BRK');
+db.set(`spam.${message.guild.id}`, 'Bilgin S');
 return message.channel.send(nn.setTitle(`İşlem başarılı!`).setColor('#f6ff00').setDescription(`Spam koruma başarıyla açıldı.`)).then(a => a.delete({timeout: 10000}));
 
 };

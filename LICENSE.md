@@ -1,4 +1,4 @@
-MIT License
+buMIT License
 
 Copyright (c) 2021 Aloysha Code TR
 

@@ -33,7 +33,7 @@ await message.channel.send(new Discord.MessageEmbed()
     .setTitle('Başarılı')
 
     .setDescription(`${kullanıcı} uyarıldı. Toplam uyarıları: **${sayı}**`)
-    .setFooter(`BRK Uyarı Sistemi`))
+    .setFooter(`Bilgin SUyarı Sistemi`))
 
 await kullanıcı.send(new Discord.MessageEmbed()
 
@@ -42,7 +42,7 @@ await kullanıcı.send(new Discord.MessageEmbed()
     .setTitle('Hey Dikkat et')
 
     .setDescription(`${message.guild.name} sunucusunda uyarıldın. Toplam uyarıların: **${sayı}**`)
-    .setFooter(`BRK Uyarı Sistemi`)) 
+    .setFooter(`Bilgin SUyarı Sistemi`)) 
 
 return}
 
@@ -55,7 +55,7 @@ await message.channel.send(new Discord.MessageEmbed()
     .setTitle('Başarılı')
 
     .setDescription(`${kullanıcı} uyarıldı. Toplam uyarıları: **${sayı}**\nSebep: ${reason}`)
-    .setFooter(`BRK Uyarı Sistemi`))
+    .setFooter(`Bilgin SUyarı Sistemi`))
 
 await kullanıcı.send(new Discord.MessageEmbed()
 
@@ -64,7 +64,7 @@ await kullanıcı.send(new Discord.MessageEmbed()
     .setTitle('Hey Dikkatli ol')
 
     .setDescription(`${message.guild.name} **sunucusunda** **\`${reason}\`** **Sebebiyle Uyarıldın.** \n**Toplam Uyarıların:** **\`${sayı}\`**`)
-    .setFooter(`BRK Uyarı Sistemi`)) 
+    .setFooter(`Bilgin SUyarı Sistemi`)) 
 
 return} }
 
@@ -91,7 +91,7 @@ if(sayı2 < sayı) return message.channel.send(new Discord.MessageEmbed()
     .setTitle('Dikkat')
 
     .setDescription(`${kullanıcı}'nın uyarı sayısı: **${sayı2}**.Bundan daha fazla uyarı silemessin.`)
-    .setFooter(`BRK Uyarı Sistemi`))
+    .setFooter(`Bilgin SUyarı Sistemi`))
 
 db.add(`uyarı.${message.guild.id}.${kullanıcı.id}`, -sayı)
 
@@ -104,7 +104,7 @@ await message.channel.send(new Discord.MessageEmbed()
     .setTitle('Başarılı')
 
     .setDescription(`${kullanıcı}'nın uyarısı silindi!\nToplam uyarı sayısı: **${sayı3 ? sayı3 : '0'}** `)
-    .setFooter(`BRK Uyarı Sistemi`))
+    .setFooter(`Bilgin SUyarı Sistemi`))
 
 await kullanıcı.send(new Discord.MessageEmbed()
 
@@ -113,7 +113,7 @@ await kullanıcı.send(new Discord.MessageEmbed()
     .setTitle('Hey Dikkat Et')
 
     .setDescription(`${message.guild.name} sunucusunda uyarın silindi bundan sonra daha dikkatli olmalısın.`)
-    .setFooter(`BRK Uyarı Sistemi`)) }
+    .setFooter(`Bilgin SUyarı Sistemi`)) }
 
 if(args[0] === 'say') {
 
@@ -131,7 +131,7 @@ if(!sayı2) return message.channel.send(new Discord.MessageEmbed()
     .setTitle('Bir Sorun Var')
 
     .setDescription(`${kullanıcı}'nın hiç uyarısı bulunamadı.`)
-    .setFooter(`BRK Uyarı Sistemi`))
+    .setFooter(`Bilgin SUyarı Sistemi`))
   
 
 await message.channel.send(new Discord.MessageEmbed()
@@ -141,7 +141,7 @@ await message.channel.send(new Discord.MessageEmbed()
     .setTitle('Başarılı')
 
     .setDescription(`${kullanıcı}:\nToplam uyarı sayısı: **${sayı2 ? sayı2 : '0'}** `))
-    .setFooter(`BRK Uyarı Sistemi`)}
+    .setFooter(`Bilgin SUyarı Sistemi`)}
     
 };
 exports.conf = {

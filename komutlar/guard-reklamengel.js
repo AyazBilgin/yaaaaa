@@ -50,5 +50,5 @@ if(message.author.id != "627803211348312065") return message.channel.send(bakim)
 exports.help = {
   name: 'reklamengel',
   description: 'Guard',
-  usage: 'BRK 2 '
+  usage: 'Bilgin S2 '
 }

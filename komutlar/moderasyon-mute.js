@@ -90,7 +90,7 @@ const logChannel = await data.fetch(`mute.log.${message.guild.id}`);
         setTimeout(() => {
         
         message.guild.channels.cache.get(logChannel).send(new Discord.MessageEmbed()
-        .setTitle(' BRK - Chat Mute Sistem')
+        .setTitle(' Bilgin S- Chat Mute Sistem')
         .setDescription(`
         ${member.user} **kullanıcısının chat mute süresi bitti!**
         `))

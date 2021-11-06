@@ -23,11 +23,11 @@ if(message.author.id != "627803211348312065") return message.channel.send(bakim)
 
 }
 let eklenti = new Discord.MessageEmbed()  
-.setAuthor(`BRK Logo Komutları`, client.user.avatarURL())
+.setAuthor(`Bilgin SLogo Komutları`, client.user.avatarURL())
 .setThumbnail(message.author.displayAvatarURL({dynamic : true}))
-.setImage('https://cdn.glitch.com/9d614440-7abd-4f7e-962c-3d7d43fd903e%2Fstandard.gif?v=1617453250882')
+.setImage('https://cdn.discordapp.com/attachments/810283528851292262/893456605960605696/standard_1.gif')
 .setColor('#f6ff00')
-.setDescription(` BRK botumuzu eklemek için \`${prefix}botdavet\` yazabilirsiniz.`)  
+.setDescription(` Bilgin Sbotumuzu eklemek için \`${prefix}botdavet\` yazabilirsiniz.`)  
 .addField(` __Ejderha__`,` \`${prefix}ejderha <yazi>\` Ejderha Logo Atar`,true)
 .addField(` __Vip__`, `\`${prefix}vip <yazi>\` Vip Logo Atar`,true)
 .addField(` __Alev__`,`\`${prefix}alev <yazi>\` Alev Logo Atar`,true)
@@ -43,7 +43,7 @@ let eklenti = new Discord.MessageEmbed()
 .addField(` __Sci-fi__`,` \`${prefix}sci-fi <yazi>\`Sci-fi logo atar.`,true)
 .addField(` __Siyah__`,` \`${prefix}siyah <yazi>\`Siyah logo atar.`,true)
 .addField(` __Taş__`,` \`${prefix}taş <yazi>\`Taş logo atar.`,true)
-.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | BRK'yi Sunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
+.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | Bilgin S'yi Sunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
  message.channel.send(eklenti) 
   };
   exports.conf = {

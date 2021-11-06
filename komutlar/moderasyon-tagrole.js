@@ -6,7 +6,7 @@ let prefix = ayarlar.prefix
 
 message.channel.send(new Discord.MessageEmbed()
 .setColor('#f6ff00')
-.setTitle(' BRK Tag Rol Sistemi')
+.setTitle(' Bilgin STag Rol Sistemi')
 .setDescription(`\`${prefix}rol-tag 🚀\`
 **Lütfen tag ayarlayınız başlamadan önce**
 

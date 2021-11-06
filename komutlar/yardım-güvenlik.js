@@ -23,16 +23,16 @@ if(message.author.id != "627803211348312065") return message.channel.send(bakim)
 
 }
 let eklenti = new Discord.MessageEmbed()  
-.setAuthor(`BRK Güvenlik Komutları`, client.user.avatarURL())
+.setAuthor(`Bilgin SGüvenlik Komutları`, client.user.avatarURL())
 .setThumbnail(message.author.displayAvatarURL({dynamic : true}))
-.setImage('https://cdn.glitch.com/9d614440-7abd-4f7e-962c-3d7d43fd903e%2Fstandard.gif?v=1617453250882')
+.setImage('https://cdn.discordapp.com/attachments/810283528851292262/893456605960605696/standard_1.gif')
 .setColor('#f6ff00')
-.setDescription(` BRK botumuzu eklemek için \`${prefix}botdavet\` yazabilirsiniz.`)  
+.setDescription(` Bilgin Sbotumuzu eklemek için \`${prefix}botdavet\` yazabilirsiniz.`)  
 .addField(` __Güvenlik Verilecek Rol__`,` \`${prefix}güvenlik-verilecek-rol\` Kişi Güvenli İse Verilecek Rol.`,true)
 .addField(` __Güvenlik Alınacak Rol__`,` \`${prefix}güvenlik-alınacak-rol\` İlk Geldiğinde Verilen Rolü Seçin!.`,true)
 .addField(` __Güvenlik Sahte Rol__`,` \`${prefix}güvenlik-sahte-rol\` Kişi Güvenli Değil İse Verilecek Rol..`,true)
 .addField(` __Güvenlik Log__`,` \`${prefix}güvenlik-kanal\` Kişi Güvenilirmi Değilmi Atacağı Kanal.`,true)
-.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | BRK'yi Sunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
+.addField(` __Bilgilendirme__`,` \`${prefix}botdavet\` | Bilgin S'yi Sunucunuza Davet Edersiniz\n \`${prefix}istatistik\` | Botun İstatistiklerini Gösterir `)
  message.channel.send(eklenti) 
   };
   exports.conf = {
